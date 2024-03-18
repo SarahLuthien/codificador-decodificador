@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cripto & Descripto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/moon-icon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="container_cabecalho">
+        <img class="logo" src="assets/moon-logo.png" alt="logo_lua">
+    </header>
+    <main class="container_geral">
+        <div class="container_input">
+            <div class="input">
+                <textarea  name="name_input" id="input" cols="30" rows="10" placeholder="Digite seu texto aqui.."></textarea><br>
+                <label> <img src="assets/Vector.svg" alt="exclamacao"> Apenas letras minusculas e sem caracteres especiais</label>
+            </div>
+            <div class="container_botoes">
+                <button class="botoes" onclick="btnCriptografar()" >Criptografar</button>
+                <button class="botoes" onclick="btnDescriptografar()" >Descriptografar</button>
+
+            </div>
+        </div>
+        <div class="container_saida"> 
+            <div id="container_inicial">
+                <img src="assets/detetive.png" alt="detetive">
+                <h1>Nenhuma mensagem encontrada</h1>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div id="container_texto">
+                <textarea name="name_output" id="output" cols="30" rows="10" hidden ></textarea>
+                <button type="button" class="btnCopy" id="copiar" onclick="btnCopy()" hidden >Copiar</button>
+            </div>
+        </div> 
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+<footer class="rodape" > 
+    <p class="texto_rodape">Desenvolvido por Sarah Luthien</p>
+    <div class="imagens_links_rodape">
+        <a href="https://github.com/SarahLuthien" target="_blank" ><img src="assets/git_roxo.png" alt="icone do github"></a>
+        <a href="https://www.linkedin.com/in/sara-pires-dev/" target="_blank"> <img src="assets/linkedin_redondo.png" alt="icone Linkedin"></a>
+    </div>
+</footer>
+</html>

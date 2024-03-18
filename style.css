@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+    background-image:  linear-gradient(rgb(177, 147, 247), rgb(216, 192, 238), rgb(71, 11, 122));
+}
+
+.container_cabecalho {
+    display: flex;
+    margin: 2%;
+    padding: 2%;
+
+}
+
+.container_cabecalho img {
+    max-width: 70px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+}
+
+
+.container_geral {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    margin: 2%;
+    gap: 200px;
+}
+
+.container_input {
+    width: 50%;
+    display: flex;
+    flex-direction: column;   
+    border-radius: 40px;
+    padding-top: 2rem;
+    padding-left: 1.9rem;
+    gap: 80px;
+    margin-bottom: 2rem;
+}
+
+ #input{
+    display: flex;
+    width: 800px;
+    height: 400px;
+    font-size: 45px;
+    font-family:  "DM Sans", sans-serif;
+    color: #5026A2;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    resize: none;
+    outline: 0; 
+    
+}
+
+::placeholder {
+    font-family: "DM Sans", sans-serif;
+    color: #5026A2;
+    font-size: 50px;
+}
+
+label {
+    font-family: "DM Sans", sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+
+.container_saida {
+    display: flex;
+    width: 550px;
+    align-items: center;
+    text-align: center; 
+    height: 1000px;
+    background-color: rgb(209, 192, 248);
+    border: none;
+    border-radius: 40px;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+   
+}
+
+
+ #container_inicial {
+    display: flex;
+    text-align: center; 
+    padding-left: 5rem;
+    font-family:  "DM Sans", sans-serif;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 40px;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+
+#container_inicial img {
+    border-radius: 40px;
+    width: 400px;
+}
+
+#container_inicial h1 {
+    color: #5026A2;
+    font-size: 30px;
+}
+
+#container_inicial p {
+    color: #5026A2;
+    font-size: 22px;
+}
+
+#container_texto {
+    display: flex;
+    padding-right: 170px;
+    width: 500px;
+    height: 1000px;
+    display: inline-block;
+    background-color: rgb(209, 192, 248);
+    font-family:  "DM Sans", sans-serif;
+    border: none;
+    border-radius: 40px;
+    flex-direction: column;
+    
+}
+
+#output {  
+    text-align: justify;
+    align-items: center;
+    padding-top: 80px;
+    font-size: 45px;
+    font-family:  "DM Sans", sans-serif;
+    color: #5026A2;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    resize: none;
+    outline: 0; 
+    
+}
+
+
+.container_botoes  {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    padding: 4%;
+}
+
+.botoes{
+    background: rgb(209, 192, 248);
+    border-radius: 25px;
+    border: solid #5026A2 3px;
+    text-align: center;
+    align-items: center;
+    padding: 20px 40px;
+    font-family:  "DM Sans", sans-serif;
+    color: rgb(73, 5, 151);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.botoes:hover {
+    color: rgb(209, 192, 248); 
+    background: #5026A2;
+}
+
+
+.btnCopy {
+    
+    background: rgb(209, 192, 248);
+    border-radius: 25px;
+    border: solid #5026A2 3px;
+    text-align: center;
+    align-items: center;
+    padding: 15px 60px;
+    font-family:  "DM Sans", sans-serif;
+    font-weight: 700;
+    color: rgb(73, 5, 151);
+    font-size: 30px;
+    margin-top: 10px;
+
+}
+
+.btnCopy:hover {
+    color: rgb(209, 192, 248); 
+    background: #5026A2;
+
+}
+
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(209, 192, 248);
+    gap: 5px;
+}
+
+.rodape:hover{
+    background-color: rgb(182, 152, 252);
+}
+
+.rodape .texto_rodape{
+    text-decoration: none; 
+    font-size: 1.70rem;
+    color: #5026A2;
+    font-family: "Dancing Script", cursive;
+    font-weight: 800;
+}
+
+.rodape .imagens_links_rodape{
+    text-decoration: none; 
+   
+}
+
+@media (max-width:1010px){
+
+    .container_geral{                                                  
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .container_input{
+        width: auto;
+    }
+
+    .container_saida{
+        width: 550px;
+    }
+   
+}
