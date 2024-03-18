@@ -201,6 +201,7 @@ label {
 
 .rodape {
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     padding: 1rem;
@@ -242,4 +243,8 @@ label {
         width: 550px;
     }
    
+    .rodape{
+        width: auto;
+
+    }
 }
