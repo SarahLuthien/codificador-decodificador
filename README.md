@@ -4,6 +4,7 @@
 <p>Projeto desenvolvido no curso de programação da ONE - Oracle Next Education com parceria da Alura.</p>
 <p> Um jogo  que consiste em escrever um texto para codificar e deixá-lo secreto. 
 Para descodificar o texto, é simples basta copiar o texto e colar na caixa de texto e utilizar o botão "decodificar". 
+  
 Challenge do curso de programação da ONE.
 #challengeonedecodificador5
 </p>
