@@ -3,12 +3,10 @@ const textoOutput = document.getElementById('output');
 //const container = document.querySelector('container_inicial');
 
 
-
 function criptografar() {
     let texto = textoInput.value;
+    caracteresExcecao();
 
-    texto = texto.toLowerCase();
-    
     let resultadoCriptografar = texto.replaceAll(/e/g, "enter").replaceAll(/i/g, "imes").replaceAll(/a/g, "ai").replaceAll(/o/g, "ober").replaceAll(/u/g, "ufat");
     
     return resultadoCriptografar;
@@ -29,12 +27,9 @@ function btnCriptografar() {
 }
 
 
-
-
 function descriptografar() {
     let texto = textoInput.value;
-
-    texto = texto.toLowerCase();
+    caracteresExcecao();
     
     let resultadoDescriptografar = texto.replaceAll(/enter/g, "e").replaceAll(/imes/g, "i").replaceAll(/ai/g, "a").replaceAll(/ober/g, "o").replaceAll(/ufat/g, "u");
 
@@ -72,10 +67,24 @@ function btnCopy() {
 
 
 
-function limparCampo() {
-    let texto = document.querySelector('textarea'); // OBS: aqui vai ser 'input'?? seria o ID ou a propriedade?? realizar teste
-    texto.value = '';
-  }
+function caracteresExcecao() {
+
+const regex = new RegExp('[/^a-z0-9\s/]+$');
+    const text = textoInput.value;
+
+      
+        if(!regex.test(text)){
+            textoOutput.value = alert("Atenção! Não permitido caracteres especiais");
+            textoOutput.value = ("Por gentilieza, digitar novamente sem caracteres especiais ou letras maiúscula.\n Atualize a página!");
+            return false;
+        } else {
+            return true;
+        }
+        
+   
+    
+}
 
 
-  // 
+
+

@@ -12,7 +12,7 @@
         <img class="logo" src="assets/moon-logo.png" alt="logo_lua">
     </header>
     <main class="container_geral">
-        <div class="container_input">
+        <section class="container_input">
             <div class="input">
                 <textarea  name="name_input" id="input" cols="30" rows="10" placeholder="Digite seu texto aqui.."></textarea><br>
                 <label> <img src="assets/Vector.svg" alt="exclamacao"> Apenas letras minusculas e sem caracteres especiais</label>
@@ -22,18 +22,18 @@
                 <button class="botoes" onclick="btnDescriptografar()" >Descriptografar</button>
 
             </div>
-        </div>
-        <div class="container_saida"> 
+        </section>
+        <section class="container_saida"> 
             <div id="container_inicial">
                 <img src="assets/detetive.png" alt="detetive">
                 <h1>Nenhuma mensagem encontrada</h1>
                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
             <div id="container_texto">
-                <textarea name="name_output" id="output" cols="25" rows="20" hidden ></textarea>
+                <textarea name="name_output" id="output" cols="25" rows="12" hidden ></textarea>
                 <button type="button" class="btnCopy" id="copiar" onclick="btnCopy()" hidden >Copiar</button>
             </div>
-        </div> 
+        </section> 
     </main>
     
     <script src="app.js"></script>

@@ -11,29 +11,24 @@ body {
     width: 100%;
     box-sizing: border-box;
     background: linear-gradient(90deg, rgb(170, 135, 252) 0%, rgb(189, 152, 224) 100%);
+    background-size: 200rem;
 }
 
 .container_cabecalho {
     display: flex;
-    margin: 2%;
-    padding: 2%;
-
-}
-
-.container_cabecalho img {
-    max-width: 70px;
-    max-height: 70px;
+    margin: 2rem;
     width: auto;
     height: auto;
+    max-width: 40px;
+    min-width: 40px;
 }
-
 
 .container_geral {
     display: flex;
     justify-content: space-around;
-    padding: 2%;
-    margin: 2%;
-    gap: 200px;
+    padding: 2rem;
+    margin: 2rem;
+    gap: 3rem;
 }
 
 .container_input {
@@ -41,17 +36,14 @@ body {
     display: flex;
     flex-direction: column;   
     border-radius: 40px;
-    padding-top: 2rem;
-    padding-left: 1.9rem;
-    gap: 80px;
+    padding: 2rem;
+    margin: 2rem;
+    gap: 8rem;
     margin-bottom: 2rem;
 }
 
  #input{
-    display: flex;
-    width: 800px;
-    height: 400px;
-    font-size: 35px;
+    font-size: 2.18rem;
     font-family:  "DM Sans", sans-serif;
     color: #5026A2;
     background: transparent;
@@ -65,105 +57,31 @@ body {
 ::placeholder {
     font-family: "DM Sans", sans-serif;
     color: #5026A2;
-    font-size: 40px;
+    font-size: 2.2rem;
 }
 
 label {
     font-family: "DM Sans", sans-serif;
     color: black;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
-
-
-.container_saida {
-    display: flex;
-    width: 580px;
-    align-items: center;
-    text-align: center; 
-    height: 1000px;
-    background-color: rgb(209, 192, 248);
-    border: none;
-    border-radius: 40px;
-    padding-left: 1rem;
-    margin-bottom: 1rem;
-   
-}
-
-
- #container_inicial {   
-    display: flex;
-    text-align: center; 
-    padding-left: 5rem;
-    font-family:  "DM Sans", sans-serif;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    border: none;
-    border-radius: 40px;
-    flex-direction: column;
-    gap: 16px;
-    
-}
-
-#container_inicial img {
-    border-radius: 40px;
-    width: 400px;
-}
-
-#container_inicial h1 {
-    color: #5026A2;
-    font-size: 30px;
-}
-
-#container_inicial p {
-    color: #5026A2;
-    font-size: 22px;
-}
-
-#container_texto {
-    display: flex;
-    width: 600px;
-    height: 1000px;
-    display: inline-block;
-    font-family:  "DM Sans", sans-serif;
-    border: none;
-    border-radius: 40px;
-    flex-direction: column;
-    
-}
-
-#output {    
-    text-align: justify;
-    align-items: center;
-    padding-top: 80px;
-    font-size: 30px;
-    font-family:  "DM Sans", sans-serif;
-    color: #5026A2;
-    background: transparent;
-    box-shadow: none;
-    border: none;
-    resize: none;
-    outline: 0; 
-    
-}
-
 
 .container_botoes  {
     display: flex;
-    width: 100%;
-    gap: 20px;
-    padding: 4%;
+    gap: 5%;
 }
 
 .botoes{
+    width: 100%;
     background: rgb(209, 192, 248);
     border-radius: 25px;
     border: solid #5026A2 3px;
     text-align: center;
     align-items: center;
-    padding: 20px 40px;
+    padding: 1rem;
     font-family:  "DM Sans", sans-serif;
     color: rgb(73, 5, 151);
-    font-size: 25px;
+    font-size: 1.40rem;
     font-weight: 700;
 }
 
@@ -174,19 +92,84 @@ label {
 }
 
 
-.btnCopy {
+
+.container_saida {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    background-color: rgb(209, 192, 248);
+    border: none;
+    align-items: center;
+    border-radius: 40px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+   
+}
+
+
+ #container_inicial {   
+    display: flex;
+    text-align: center; 
+    align-items: center;
+    font-family:  "DM Sans", sans-serif;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 40px;
+    flex-direction: column;
+    gap: 1rem;
     
+}
+
+#container_inicial img {
+    border-radius: 40px;
+    width: 45%;
+}
+
+#container_inicial h1 {
+    color: #5026A2;
+    font-size: 1.50rem;
+}
+
+#container_inicial p {
+    color: #5026A2;
+    font-size: 1.20rem;
+}
+
+#container_texto {
+    display: inline-block; 
+    flex-direction: column;
+}
+
+#output {    
+    width: 100%;
+    text-align: justify;
+    padding-top: 2rem;
+    font-size: 1.90rem;
+    font-family:  "DM Sans", sans-serif;
+    color: #5026A2;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    resize: none;
+    outline: 0; 
+    margin-bottom: 4rem;
+    
+}
+
+.btnCopy {
+    width: 100%;
     background: rgb(170, 135, 252);
     border-radius: 25px;
     border: solid #5026A2 3px;
     text-align: center;
     align-items: center;
-    padding: 15px 60px;
+    padding: 1rem;
     font-family:  "DM Sans", sans-serif;
     font-weight: 700;
     color: rgb(73, 5, 151);
-    font-size: 30px;
-    margin-top: 10px;
+    font-size: 1.30rem;
 
 }
 
@@ -206,7 +189,7 @@ label {
     text-align: center;
     flex-direction: column;
     background-color: rgb(209, 192, 248);
-    gap: 5px;
+    gap: 1rem;
 }
 
 .rodape:hover{
@@ -215,7 +198,7 @@ label {
 
 .rodape .texto_rodape{
     text-decoration: none; 
-    font-size: 1.70rem;
+    font-size: 1.50rem;
     color: #5026A2;
     font-family: "Dancing Script", cursive;
     font-weight: 800;
@@ -223,36 +206,100 @@ label {
 
 .rodape .imagens_links_rodape{
     text-decoration: none; 
+    width: auto;
    
+}
+
+@media (max-width:1420px){
+    #container_inicial img{
+        width: 70%;
+    }
+
+    #container_inicial h1 {
+        color: #5026A2;
+        font-size: 1.5rem;
+    }
+    
+    #container_inicial p {
+        color: #5026A2;
+        font-size: 1rem;
+    }
 }
 
 @media (max-width:1010px){
 
-    .container_geral{                                                  
+    .container_geral{      
+        width: auto;                                            
         flex-direction: column;
-        padding: 5%;
+        padding: 1rem;
+        margin: 1rem;
     }
 
     .container_input{
         width: auto;
+        padding: 1rem;
+        margin: 1rem;
+        gap: 4rem;
+    }
+
+    #input{
+        font-size: 1.5rem;
+    }
+
+    ::placeholder{
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 0.8rem;
+
     }
 
     .container_saida{
-        padding-left: 50px;
-        width: 500px;
-        height: auto;
+        width: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+      
     }
 
     #output{
-        font-size: 30px;
+        font-size: 1.4rem;
     }
 
     #container_inicial img{
         display: none;
     }
+
+    #container_inicial h1 {
+        color: #5026A2;
+        font-size: 1.5rem;
+    }
+    
+    #container_inicial p {
+        color: #5026A2;
+        font-size: 1rem;
+    }
    
+    .botoes{
+        width: auto;
+        font-size: 1rem;
+    }
+
+    .btnCopy{
+        width: auto;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
     .rodape{
         width: auto;
 
     }
+    
+    .rodape .texto_rodape{
+        font-size: 1.2rem;
+    }
+
+ 
 }
