@@ -10,7 +10,7 @@
 body {
     width: 100%;
     box-sizing: border-box;
-    background-image:  linear-gradient(rgb(177, 147, 247), rgb(216, 192, 238), rgb(71, 11, 122));
+    background: linear-gradient(90deg, rgb(170, 135, 252) 0%, rgb(189, 152, 224) 100%);
 }
 
 .container_cabecalho {
@@ -51,7 +51,7 @@ body {
     display: flex;
     width: 800px;
     height: 400px;
-    font-size: 45px;
+    font-size: 35px;
     font-family:  "DM Sans", sans-serif;
     color: #5026A2;
     background: transparent;
@@ -65,7 +65,7 @@ body {
 ::placeholder {
     font-family: "DM Sans", sans-serif;
     color: #5026A2;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 label {
@@ -77,7 +77,7 @@ label {
 
 .container_saida {
     display: flex;
-    width: 550px;
+    width: 580px;
     align-items: center;
     text-align: center; 
     height: 1000px;
@@ -90,7 +90,7 @@ label {
 }
 
 
- #container_inicial {
+ #container_inicial {   
     display: flex;
     text-align: center; 
     padding-left: 5rem;
@@ -121,11 +121,9 @@ label {
 
 #container_texto {
     display: flex;
-    padding-right: 170px;
-    width: 500px;
+    width: 600px;
     height: 1000px;
     display: inline-block;
-    background-color: rgb(209, 192, 248);
     font-family:  "DM Sans", sans-serif;
     border: none;
     border-radius: 40px;
@@ -133,11 +131,11 @@ label {
     
 }
 
-#output {  
+#output {    
     text-align: justify;
     align-items: center;
     padding-top: 80px;
-    font-size: 45px;
+    font-size: 30px;
     font-family:  "DM Sans", sans-serif;
     color: #5026A2;
     background: transparent;
@@ -178,7 +176,7 @@ label {
 
 .btnCopy {
     
-    background: rgb(209, 192, 248);
+    background: rgb(170, 135, 252);
     border-radius: 25px;
     border: solid #5026A2 3px;
     text-align: center;
@@ -240,7 +238,17 @@ label {
     }
 
     .container_saida{
-        width: 550px;
+        padding-left: 50px;
+        width: 500px;
+        height: auto;
+    }
+
+    #output{
+        font-size: 30px;
+    }
+
+    #container_inicial img{
+        display: none;
     }
    
     .rodape{
