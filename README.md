@@ -10,7 +10,7 @@ Challenge do curso de programação da ONE.
 #challengeonedecodificador5
 </p>
 <div>
-  <img src="[![badge-challenge-one.png](https://i.postimg.cc/s1djKCmD/badge-challenge-one.png)](https://postimg.cc/cthG4jPV)"
+  <img src="https://i.postimg.cc/s1djKCmD/badge-challenge-one.png"
 </div>
 
 ## :rocket: Tecnologias
