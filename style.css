@@ -17,8 +17,7 @@ body {
 .container_cabecalho {
     display: flex;
     margin: 2rem;
-    width: auto;
-    height: auto;
+    width: 100%;
     max-width: 40px;
     min-width: 40px;
 }
@@ -228,6 +227,10 @@ label {
 
 @media (max-width:1010px){
 
+    .logo{
+        width: 45px;
+    }
+
     .container_geral{      
         width: auto;                                            
         flex-direction: column;
@@ -293,8 +296,8 @@ label {
     }
 
     .rodape{
-        width: auto;
-
+        width: 100%;
+        
     }
     
     .rodape .texto_rodape{

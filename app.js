@@ -5,6 +5,7 @@ const textoOutput = document.getElementById('output');
 
 function criptografar() {
     let texto = textoInput.value;
+
     caracteresExcecao();
 
     let resultadoCriptografar = texto.replaceAll(/e/g, "enter").replaceAll(/i/g, "imes").replaceAll(/a/g, "ai").replaceAll(/o/g, "ober").replaceAll(/u/g, "ufat");
@@ -41,9 +42,13 @@ function btnDescriptografar() {
     document.getElementById("output").removeAttribute('hidden');
     document.getElementById("copiar").removeAttribute('hidden');
     
+    
     const textoDescriptado = descriptografar(textoInput.value);
     
+
     document.getElementById('output').innerHTML = textoDescriptado;
+
+    document.getElementById("output").setAttribute("disabled", "disabled"); // remove o atributo disable do textarea output
 
     limparCampo();
     
@@ -59,10 +64,15 @@ function limparCampo() {
     
 
 function btnCopy() {
+    document.getElementById("output").removeAttribute("disabled"); //remove atributo disable
+
     let textoCopiado = document.getElementById('output');
     textoCopiado.select();
     document.execCommand('copy'); 
-    console.log("Texto copiado com sucesso!");
+    document.getElementById("output").setAttribute("disabled", "disabled"); // retorna o atributo disable
+
+   
+    
 }
 
 
@@ -74,9 +84,13 @@ const regex = new RegExp('[/^a-z0-9\s/]+$');
 
       
         if(!regex.test(text)){
-            textoOutput.value = alert("Atenção! Não permitido caracteres especiais");
-            textoOutput.value = ("Por gentilieza, digitar novamente sem caracteres especiais ou letras maiúscula.\n Atualize a página!");
+            textoOutput.value = alert("Atenção! Não são permitidos caracteres especiais e ou letras maiúsculas");
+            textoOutput.value = ''; // tira o valor
+
+            window.location.reload(); //atualiza a página
+
             return false;
+
         } else {
             return true;
         }
